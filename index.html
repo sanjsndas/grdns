@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Greenbloomsflaura - Gardens & Nature</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f8f6;
+    color: #2a3a27;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #2f5233;
+    color: #e6f2e9;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #c8d9c5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #9cc497;
+  }
+
+  .hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #e9f0ea;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.65);
+    padding: 0 20px;
+  }
+
+  .hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9cc497;
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+
+  .about-text, .services-text, .tips-text {
+    font-size: 1.1rem;
+    color: #3b4a34;
+  }
+
+  .services-list, .tips-list {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .services-list li, .tips-list li {
+    margin-bottom: 12px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(46, 63, 28, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .contact {
+    background-color: #d9e8d6;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .contact a {
+    display: inline-block;
+    background-color: #2f5233;
+    color: #e6f2e9;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact a:hover {
+    background-color: #4f7a4b;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    color: #718462;
+    border-top: 1px solid #c2d1bd;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Greenbloomsflaura</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" role="banner" aria-label="Garden Image and Welcome Message">
+  <h2>Welcome to Your Garden Sanctuary</h2>
+  <p>Discover the beauty of nature with Greenbloomsflaura — inspiring your outdoor spaces with lush greenery and colorful blossoms.</p>
+</section>
+
+<main class="container" role="main">
+
+  <section id="about" aria-label="About Greenbloomsflaura">
+    <h3>About Greenbloomsflaura</h3>
+    <p class="about-text">
+      Greenbloomsflaura is your dedicated partner in transforming everyday outdoor spaces into enchanting natural havens. Founded with a passion for plants and the environment, our mission is to provide inspiration, education, and quality gardening solutions to enthusiasts of all levels — from beginners to seasoned horticulturists. Whether you're looking to cultivate a vibrant flower garden, a sustainable vegetable patch, or a tranquil green retreat, Greenbloomsflaura offers hands-on guidance and resources to help you grow your dream garden.
+    </p>
+    <p class="about-text">
+      We believe gardens are more than just plots of land — they are living art, spaces for rejuvenation, and vital ecosystems supporting wildlife. Through carefully curated articles, expert service offerings, and inspiring visuals, we aim to nurture your love for nature right at home.
+    </p>
+  </section>
+
+  <section id="services" aria-label="Gardening Services Offered">
+    <h3>Our Services</h3>
+    <p class="services-text">
+      To bring your garden visions to life, Greenbloomsflaura offers a wide range of specialized services tailored to your unique needs:
+    </p>
+    <ul class="services-list">
+      <li><strong>Garden Design & Planning:</strong> Custom landscape design crafted to enhance your outdoor environment with a harmonious blend of colors, textures, and plants optimized for your locale.</li>
+      <li><strong>Plant Selection & Supply:</strong> Access to a curated selection of healthy, high-quality plants ranging from native perennials and seasonal blooms to rare exotic species.</li>
+      <li><strong>Soil Testing & Improvement:</strong> Comprehensive soil assessment and nutrient optimization to ensure your garden thrives from the roots up.</li>
+      <li><strong>Seasonal Maintenance & Care:</strong> Professional upkeep to keep your garden flourishing year-round, including pruning, mulching, pest management, and irrigation checks.</li>
+      <li><strong>Workshops and Tutorials:</strong> Interactive sessions to empower you with practical gardening knowledge, from seed starting to composting techniques.</li>
+    </ul>
+  </section>
+
+  <section id="tips" aria-label="Gardening Tips and Advice">
+    <h3>Gardening Tips for Every Season</h3>
+    <p class="tips-text">
+      Whether you're starting your first garden or looking to refine your green thumb, these tips will help you cultivate a healthy, vibrant outdoor space:
+    </p>
+    <ul class="tips-list">
+      <li><strong>Spring Awakening:</strong> Begin by preparing your soil with organic compost and test its pH level. Choose early bloomers like tulips, daffodils, and pansies to add cheerful color after winter.</li>
+      <li><strong>Summer Care:</strong> Water deeply but less frequently to encourage strong roots. Use mulch to retain moisture and control weeds. Keep an eye out for common pests and treat them promptly.</li>
+      <li><strong>Fall Preparation:</strong> Plant bulbs for the next spring and prune back overgrown shrubs. This season is ideal for planting trees and perennials so they establish before winter.</li>
+      <li><strong>Winter Wisdom:</strong> Protect vulnerable plants with burlap wraps or cloches. Use this quieter season to plan next year's garden and start seeds indoors for an early start.</li>
+      <li><strong>Sustainable Practices:</strong> Incorporate rainwater harvesting, native plants, and organic fertilizers to reduce environmental impact and create a wildlife-friendly habitat.</li>
+    </ul>
+  </section>
+
+  <section id="gallery" aria-label="Gallery of Gardens and Plants">
+    <h3>Gallery</h3>
+    <div class="gallery" role="list">
+      <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=800&q=80" alt="Colorful flower garden with tulips, daisies, and roses" role="listitem"/>
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80" alt="Lush vegetable garden with rows of tomatoes and lettuces" role="listitem"/>
+      <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=80" alt="Tranquil garden pond surrounded by green plants and flowers" role="listitem"/>
+      <img src="garden.jpg" alt="Modern garden with stone paths and ornamental grasses" role="listitem"/>
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact and inquiries">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <p>Ready to bring your garden dreams to life? Reach out to our experienced team and let's cultivate something beautiful together.</p>
+      <a href="contact.html" aria-label="Go to contact page">Get in Touch</a>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+<p>Greenbloomsflaura Garden Center<br />
+   1485 Bayshore Blvd<br />
+    San Francisco, CA 94124<br />
+    United States<br /><p/>
+  &copy; 2024 Greenbloomsflaura. All rights reserved. 
+</footer>
+
+</body>
+</html>
+

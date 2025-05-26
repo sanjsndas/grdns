@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - Greenbloomsflaura</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f8f6;
+    color: #2a3a27;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #2f5233;
+    color: #e6f2e9;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #c8d9c5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #9cc497;
+  }
+
+  main.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #9cc497;
+    padding-bottom: 8px;
+    color: #396032;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #3b4a34;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  form {
+    background-color: #d9e8d6;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(46, 63, 28, 0.3);
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #2f5233;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9cc497;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #396032;
+    outline: none;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  button {
+    background-color: #2f5233;
+    color: #e6f2e9;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #4f7a4b;
+  }
+
+  address {
+    margin-top: 30px;
+    font-style: normal;
+    color: #475d38;
+    line-height: 1.5;
+  }
+
+  address strong {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+    color: #2f5233;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    color: #718462;
+    border-top: 1px solid #c2d1bd;
+    margin-top: 40px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Greenbloomsflaura</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container" role="main" aria-label="Contact Greenbloomsflaura">
+  <h2>Contact Us</h2>
+  <p>We’re delighted you want to get in touch with Greenbloomsflaura! Whether you have questions about our gardening services, want personalized advice for your green space, or simply want to share feedback or ideas, we’re here for you. Your voice and experience matter to us, and we believe that good communication helps us grow a vibrant garden community together.</p>
+
+  <p>Please use the contact form below to send us your message. We strive to respond promptly, usually within 1-2 business days. If your inquiry is urgent, please feel free to mention that in your message, and we will do our best to prioritize your request.</p>
+
+  <form action="mailto:info@greenbloomsflaura.com" method="post" enctype="text/plain" aria-label="Contact form">
+    <label for="name">Name<span aria-hidden="true" style="color:#b00000;">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email<span aria-hidden="true" style="color:#b00000;">*</span></label>
+    <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject of your message" />
+
+    <label for="message">Message<span aria-hidden="true" style="color:#b00000;">*</span></label>
+    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <address>
+    <strong>Greenbloomsflaura Headquarters</strong>
+    Greenbloomsflaura Garden Center<br />
+   1485 Bayshore Blvd<br />
+    San Francisco, CA 94124<br />
+    United States<br />
+    <br />
+    <strong>Phone:</strong> (555) 123-4567<br />
+    <strong>Email:</strong> <a href="mailto:info@greenbloomsflaura.com">info@greenbloomsflaura.com</a><br />
+    <strong>Business Hours:</strong> Monday - Friday: 9 AM - 6 PM (EST)
+  </address>
+
+  
+
+  <p>Thank you for choosing Greenbloomsflaura. We look forward to helping you cultivate your perfect garden.</p>
+</main>
+
+<footer role="contentinfo">
+  &copy; 2024 Greenbloomsflaura. All rights reserved.
+</footer>
+</body>
+</html>
